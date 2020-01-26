@@ -17,8 +17,8 @@ export class WeatherService {
     let params = new HttpParams()
         .set('lat' , lat)
         .set('lon' , lon)
-        .set('unit' , 'imperial')
-        .set('appId' , this.apikey)
+        .set('units' , 'imperial')
+        .set('appid' , this.apikey)
 
     return this.http.get(this.url , {params});
   }
